@@ -8,7 +8,7 @@ function App() {
     <Router>
       <div className="container mt-3">
         <NavBar/>
-        <Route exact path="/" component={Dashboard}/>
+        <Route exact path="/spaceX-Dashboard" component={Dashboard}/>
       </div>
     </Router>
   );
