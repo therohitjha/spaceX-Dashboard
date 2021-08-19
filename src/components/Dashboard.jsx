@@ -22,57 +22,21 @@ const Dashboard = () => {
   const [dateList] = useState([
     {
       label: "Past Week",
-      isActive: false,
-      get value() {
-        let date = new Date();
-        let last = new Date(date.getTime() - 7 * 24 * 60 * 60 * 1000);
-        return last.getUTCDate();
-      },
     },
     {
       label: "Past Month",
-      isActive: false,
-      get value() {
-        let date = new Date();
-        let last = new Date(date.getTime() - 30 * 24 * 60 * 60 * 1000);
-        return last.getUTCMonth();
-      },
     },
     {
       label: "Past 3 Month",
-      isActive: false,
-      get value() {
-        let date = new Date();
-        let last = new Date(date.getTime() - 90 * 24 * 60 * 60 * 1000);
-        return last.getUTCMonth();
-      },
     },
     {
       label: "Past 6 Month",
-      isActive: false,
-      get value() {
-        let date = new Date();
-        let last = new Date(date.getTime() - 180 * 24 * 60 * 60 * 1000);
-        return last.getUTCMonth();
-      },
     },
     {
       label: "Past Year",
-      isActive: false,
-      get value() {
-        let date = new Date();
-        let last = new Date(date.getTime() - 365 * 24 * 60 * 60 * 1000);
-        return last.getUTCFullYear();
-      },
     },
     {
       label: "Past 2 Years",
-      isActive: false,
-      get value() {
-        let date = new Date();
-        let last = new Date(date.getTime() - 730 * 24 * 60 * 60 * 1000);
-        return last.getUTCFullYear();
-      },
     },
   ]);
   const [calender, setCalender] = useState("");
